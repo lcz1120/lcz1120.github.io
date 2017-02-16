@@ -1,23 +1,59 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>主页</title>
-	<style type="text/css">
-		body,html{
-			margin: 0;
-			padding: 0;
-			width: 100%;
-			height: 100%;
-		}
-		#bg{
-			width: 100%;
-			height: 100%;
-			background: #000;
-		}
-	</style>
-</head>
-<body>
-	<div id="bg"></div>
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>index</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: #000;
+			}
+			div{
+				position: absolute;
+				border-radius: 50%;
+				border: 2px solid #000;
+				display: none;
+				background: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<script>
+			var divs = document.getElementsByTagName('div');
+			document.onclick = function(ev){
+				fn(divs[0],ev);
+				setTimeout(function(){
+					fn(divs[1],ev);
+				},100)
+				setTimeout(function(){
+					fn(divs[2],ev);
+				},200)
+			}
+			function fn(obj,ev){
+				obj.style.display = 'block';
+				var w = 10;
+				var h = 10;
+				var o = 100;
+				clearInterval(obj.timer);
+				obj.timer = setInterval(function(){
+					obj.style.width = (w+=4)+'px';
+					obj.style.height = (h+=4)+'px';
+					obj.style.opacity = (o-=2)/100;
+					var l = ev.clientX - obj.offsetWidth/2;
+					var t = ev.clientY - obj.offsetHeight/2;
+					obj.style.left = l + 'px';
+					obj.style.top = t + 'px';
+					if(o==0){
+						clearInterval(obj.timer);
+					}
+				},16);
+			}
+		</script>
+	</body>
 </html>
