@@ -1,24 +1,24 @@
-# Basic
-title: 潘柏信
+﻿# Basic
+title: 随心
 subtitle: 个人站
 description: 欢迎来到我的个人站~
 # 头像里面的标题
-avatarTitle: leopardpan
+avatarTitle: lcz1120
 # 头像里面的描述
-avatarDesc: iOS / 机器学习
-url: "http://baixin.io"
+avatarDesc: web前端开发工程师
+url: "http://www.lcz1120.github.io"
 
 # Comment
 comment:
-    disqus: leopard
+    disqus: 
     # uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social
 social:
-    weibo: 5366874726 
-    github: leopardpan
+    weibo: 时光暖暖丶 
+    github: lcz1120
     # twitter: 
-    mail: leopardpan@icloud.com
+    mail: mxsxin@yeah.net
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
