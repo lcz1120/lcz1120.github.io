@@ -1,9 +1,9 @@
 ﻿# Basic
 title: 随心
 subtitle: 个人站
-description: 欢迎来到我的个人站~
+description: 欢迎来到我的个人小站~
 # 头像里面的标题
-avatarTitle: lcz1120
+avatarTitle: 随心
 # 头像里面的描述
 avatarDesc: web前端开发工程师
 url: "http://www.lcz1120.github.io"
@@ -15,7 +15,7 @@ comment:
 
 # Social
 social:
-    weibo: 时光暖暖丶 
+    weibo: 5555197348 
     github: lcz1120
     # twitter: 
     mail: mxsxin@yeah.net
@@ -42,7 +42,7 @@ ga:
 # 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
 
 
-permalink: /:year/:month/:title/
+permalink: /:year/:month/:title/    
 # Format
 highlighter: rouge
 
