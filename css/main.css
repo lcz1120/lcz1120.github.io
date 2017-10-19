@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+﻿/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -473,7 +473,7 @@ img::-moz-selection {
 
   .post img {
     max-width: 100%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     border-radius: 3px;
     text-align: center;
     display: block; }
