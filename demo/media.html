@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+
+    <script>
+
+        // document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+
+    </script>
+
+    <!--<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>-->
+
+</head>
+
+<style>
+
+    html {
+        font-size : 100px;
+    }
+
+    /* 650设计稿
+
+    @media screen and (min-width: 320px) {html{font-size:50px;}}
+    @media screen and (min-width: 360px) {html{font-size:56.25px;}}
+    @media screen and (min-width: 375px) {html{font-size:58.59375px;}}
+    @media screen and (min-width: 400px) {html{font-size:62.5px;}}
+    @media screen and (min-width: 414px) {html{font-size:64.6875px;}}
+    @media screen and (min-width: 440px) {html{font-size:68.75px;}}
+    @media screen and (min-width: 480px) {html{font-size:75px;}}
+    @media screen and (min-width: 520px) {html{font-size:81.25px;}}
+    @media screen and (min-width: 560px) {html{font-size:87.5px;}}
+    @media screen and (min-width: 600px) {html{font-size:93.75px;}}
+    @media screen and (min-width: 640px) {html{font-size:100px;}}
+    @media screen and (min-width: 680px) {html{font-size:106.25px;}}
+    @media screen and (min-width: 720px) {html{font-size:112.5px;}}
+    @media screen and (min-width: 760px) {html{font-size:118.75px;}}
+    @media screen and (min-width: 800px) {html{font-size:125px;}}
+    @media screen and (min-width: 960px) {html{font-size:150px;}}
+
+
+    */
+
+
+    /* 750设计稿  */
+
+    /*
+
+        算法： 媒体查询宽度 / (设计稿的宽度 / 100)
+        demo:  320 / (750/100) = 42.66666  min-width: 320的宽度
+        rem: 20px = .2rem
+     */
+
+    @media screen and (min-width: 320px) {html{font-size:42.6666666px;}}
+    @media screen and (min-width: 360px) {html{font-size:48px;}}
+    @media screen and (min-width: 375px) {html{font-size:50px;}}
+    @media screen and (min-width: 400px) {html{font-size:53.3333333px;}}
+    @media screen and (min-width: 414px) {html{font-size:55.2px;}}
+    @media screen and (min-width: 440px) {html{font-size:58.6666666px;}}
+    @media screen and (min-width: 480px) {html{font-size:64px;}}
+    @media screen and (min-width: 520px) {html{font-size:69.3333333px;}}
+    @media screen and (min-width: 560px) {html{font-size:74.66666px;}}
+    @media screen and (min-width: 600px) {html{font-size:80px;}}
+    @media screen and (min-width: 640px) {html{font-size:85.33333px;}}
+    @media screen and (min-width: 680px) {html{font-size:90.66666px;}}
+    @media screen and (min-width: 720px) {html{font-size:96px;}}
+    @media screen and (min-width: 760px) {html{font-size:101.3333333px;}}
+    @media screen and (min-width: 800px) {html{font-size:106.666666px;}}
+    @media screen and (min-width: 960px) {html{font-size:128px;}}
+
+
+
+
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    div {
+        font-size: .2rem;
+        line-height: 2rem;
+        width: 7.5rem;
+        height: 2rem;
+        background: red;
+    }
+
+    /*input {*/
+    /*width: 10rem;*/
+    /*height: 5rem;*/
+    /*font-size: .18rem;*/
+    /*}*/
+    p {
+        width: 200px;
+        height: 100px;
+        background: #2db7f5;
+    }
+
+    span {
+        width: 10rem;
+        height: 1rem;
+        background: #00ffff;
+        display: block;
+    }
+
+    /*  1rem == 100rem   */
+
+</style>
+<body>
+<div>测试</div>
+
+<p>测试</p>
+
+
+</body>
+</html>
