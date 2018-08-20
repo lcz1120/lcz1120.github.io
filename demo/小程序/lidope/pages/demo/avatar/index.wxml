@@ -1,0 +1,6 @@
+<view class='ball'>
+     <view class='water-container' style='top:30%'>
+         <view class='water1'></view >
+         <view class='water2'></view >
+     </view>
+</view>

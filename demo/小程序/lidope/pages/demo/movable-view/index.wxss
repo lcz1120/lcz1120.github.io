@@ -1,0 +1,13 @@
+.movable {
+    width: 200rpx;
+    height: 200rpx;
+    background: red;
+}
+
+movable-view {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    line-height: 200rpx;
+    text-align: center;
+}
