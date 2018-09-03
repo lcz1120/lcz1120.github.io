@@ -1,11 +1,12 @@
 {
   "pages":[
-    "pages/demo/movable-view/index",
+     
     "pages/demo/index/index",
     "pages/demo/avatar/index",
+    "pages/demo/rich-text/index",
+    "pages/demo/movable-view/index",
 
 
-    
     "pages/index/index",
     "pages/icon/index",
     "pages/color/index",

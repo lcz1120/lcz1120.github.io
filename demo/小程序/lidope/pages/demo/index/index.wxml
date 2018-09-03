@@ -1,2 +1,8 @@
-<navigator url="../../index/index">iView</navigator>
+<!-- <navigator url="../../index/index">iView</navigator>
 <navigator url="../../demo/avatar/index">动态头像背景</navigator>
+<navigator url="../../demo/movable-view/index">movable-view</navigator>
+<navigator url="../../demo/rich-text/index">rich-text</navigator> -->
+
+<block wx:for="{{navigator}}" wx:key="*this">
+    <navigator url="{{item.url}}" style="background: {{item.background}}">{{item.name}}</navigator>
+</block>

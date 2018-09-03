@@ -1,3 +1,20 @@
-<movable-area class="movable">
-    <movable-view>demo</movable-view>
-</movable-area>
+<view class="section">
+  <view class="section__title">movable-view区域小于movable-area</view>
+  <movable-area style="height: 200px; width: 200px; background: black;">
+    <movable-view style="height: 50px; width: 50px; background: salmon;" x="{{x}}" y="{{y}}" direction="all">
+    </movable-view>
+  </movable-area>
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+  </view>
+  <view class="section__title">movable-view区域大于movable-area</view>
+  <movable-area style="height: 100px; width: 100px; background: black;">
+    <movable-view style="height: 200px; width: 200px; background: salmon;" direction="all">
+    </movable-view>
+  </movable-area>
+  <view class="section__title">可放缩</view>
+  <movable-area style="height: 200px; width: 200px; background: black;" scale-area>
+    <movable-view style="height: 50px; width: 50px; background: salmon;" direction="all" bindchange="onChange" bindscale="onScale" scale scale-min="0.5" scale-max="4" scale-value="2">
+    </movable-view>
+  </movable-area>
+</view>

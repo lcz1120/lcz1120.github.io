@@ -1,1 +1,14 @@
-/* pages/demo/index/index.wxss */
+page {
+    margin-left: 2%;
+}
+
+navigator {
+    width: 44%;
+    height: 200rpx;
+    display: inline-block;
+    line-height: 200rpx;
+    text-align: center;
+    color: #fff;
+    margin: 2%;
+    border-radius: 20rpx;
+}

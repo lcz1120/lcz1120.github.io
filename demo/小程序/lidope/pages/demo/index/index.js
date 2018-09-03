@@ -1,66 +1,50 @@
-// pages/demo/index/index.js
 Page({
+    data: {
+        navigator: [
+        {
+            name: 'iView',
+            url: '/pages/demo/index/index',
+            background: ''
+        },
+        {
+            name: '动态头像背景',
+            url: '/pages/demo/avatar/index',
+            background: ''
+        },
+        {
+            name: 'movable-view',
+            url: '/pages/demo/movable-view/index',
+            background: ''
+        },
+        {
+            name: 'rich-text',
+            url: '/pages/demo/rich-text/index',
+            background: ''
+        }],
+    },
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-  
-  },
+    onReady: function () {
+        this.navigator();
+    },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
+    navigator: function () {
+        var _this = this;
+        var navigator = this.data.navigator;
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
+        navigator.forEach(function (ele, index) {
+            ele.background = _this.backgroundRandom();
+        });
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
+        this.setData({
+            navigator: navigator
+        });
+    },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
+    backgroundRandom: function () {
+        var r = Math.floor(Math.random() * 256);
+        var g = Math.floor(Math.random() * 256);
+        var b = Math.floor(Math.random() * 256);
+        return "rgb(" + r + ', ' + g + ', ' + b + ")";
+    },
 })
